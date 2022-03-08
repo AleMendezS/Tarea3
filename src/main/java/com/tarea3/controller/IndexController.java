@@ -34,6 +34,8 @@ public class IndexController {
         String mensaje ="hola desde el controlador";
         model.addAttribute("TextoSaludo", mensaje);
         
+        
+        
         var clientesDB = clienteDao.findAll();
         model.addAttribute("clientesDB", clientesDB);
         

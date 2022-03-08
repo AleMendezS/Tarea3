@@ -8,7 +8,9 @@
     </head>
     <body>
         <div>Saludos</div>
-
+        <a th:href="@{/cliente}">listado de clientes</a>
+        <a th:href="@{/juegos}">listado de juegos</a>
+        
         <p th:text="${TextoSaludo}"></p>
         
         <p>Nombre: <span th:text="${cliente.nombre}"></span></p>
