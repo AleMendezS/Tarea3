@@ -3,7 +3,7 @@
 header{
 width:100%;
 height:140px;
-background-color:#151E3D;
+background-color:#000000;
 color:white;
 }
 #header{
@@ -13,7 +13,7 @@ margin:0px auto;
 }
 /*Logo*/
 #logo{
-background-image:url(../staticimage/logo1.jpg);
+background-image:url(../staticimage/logo3.png);
 float:left;
 width:125px;
 height:125px;
