@@ -15,7 +15,7 @@ margin:0px auto;
 #logo{
 background-image:url(../staticimage/logo3.png);
 float:left;
-width:125px;
+width:135px;
 height:125px;
 background-color:#37bcf9;
 margin-top:8px;
@@ -25,6 +25,7 @@ text-align:center;
 overflow:hidden;
 cursor:pointer;
 transition:all 300ms;
+
 }
 /*Menu de inicio header*/
 #menu{

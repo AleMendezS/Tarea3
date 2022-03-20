@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html  xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+          <h2>Formulario</h2>
+        <br>
+       
+        <form th:action="@{/guardarConsulta}"
+              method="post"
+              th:object="${consulta}">
+            <input type="hidden" name ="idConsulta" th:field="*{idConsulta}"/>
+            
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" th:field="*{correo}">
+            <br>
+            <label for="consulta">Consulta</label>
+            <input type="text" name="consulta" th:field="*{consulta}">
+            <br>
+            
+            <input type="submit" name="enviar"  value="Enviar"/>
+        </form>
+    </body>
+</html>

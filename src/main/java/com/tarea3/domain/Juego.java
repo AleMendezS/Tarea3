@@ -10,24 +10,29 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="juego")
+@Table(name = "juego")
 
-public class Juego implements Serializable{
+public class Juego implements Serializable {
+
     private static final long serialVersionUID = 1L;
-    
+
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Long idjuego;
-    private String nombreJuego;
-    private String categoria;
-    private int cantidad;
-   
-    public Juego(){
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idJuego;
+    private String nombre;
+    private double precio;
+    private String disponible;
+
+    public Juego() {
+    }
+
+    public Juego(Long idJuego, String nombre, double precio, String disponible) {
+        this.idJuego = idJuego;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.disponible = disponible;
     }
     
-    public Juego(String nombreJuego, String categoria, int cantidad){
-        this.nombreJuego=nombreJuego;
-        this.categoria=categoria;
-        this.cantidad=cantidad;
-    }
+    
+    
 }
